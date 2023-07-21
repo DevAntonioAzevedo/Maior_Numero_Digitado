@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-20 09:26:09 "/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMDsiMDk6MTk6MDYgIjsyNTc3"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMDsiMDk6MjY6MDkgIjsxOzI2ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;=b">
+                <then>
+                    <assign variable="temp" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="temp" expression="b"/>
+                </else>
+            </if>
+            <output expression="&quot;Digite o terceiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="c&gt;=temp">
+                <then>
+                    <assign variable="temp" expression="c"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;O maior n&#250;mero digita foi o &quot; &amp; temp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
